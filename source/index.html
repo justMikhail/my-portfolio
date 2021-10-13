@@ -11,7 +11,43 @@
 <body class="page__body">
 
   <header class="page__header header">
-    Header
+    <nav class="header__nav nav nav--closed nav--nojs">
+      <button class="nav-toggle"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="nav-list">
+        <li class="nav-list__item">
+          <a href="#">Home</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#">About me</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#">Portfolio</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#">Контакты</a>
+        </li>
+      </div>
+    </nav>
+    <div class="header__contacts header-contacts">
+      <ul class="header-contacts-list">
+        <li class="header-contacts-list__item">
+          <a href="tel:+79991335224" aria-label="Phone">
+            <span class="header-contacts-list__text">+7 999 133 52 24</span>
+            <svg class="header-contacts-list__icon" width="67" height="28">
+              <use xlink:href="./img/icons/sprite.svg#phone"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-contacts-list__item">
+          <a href="mailto:mikhail.userpic@mail.com" aria-label="Email">
+            <span class="header-contacts-list__text">mikhail.userpic@mail.com</span>
+            <svg class="header-contacts-list__icon" width="67" height="28">
+              <use xlink:href="./img/icons/sprite.svg#email"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </header>
 
   <main class="page__main">
