@@ -1,0 +1,34 @@
+@mixin list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin fieldset-reset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+@mixin legend-reset {
+  display: table;
+}
+
+@mixin basic-focus {
+  outline: 2px dashed $basic-spec-9;
+  outline-offset: 1px;
+}
