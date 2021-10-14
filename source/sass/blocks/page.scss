@@ -4,8 +4,7 @@
 }
 
 .page__body {
-  min-height: 100%;
-  overflow: hidden;
+  height: 100%;
   box-sizing: border-box;
   // Grid
   display: grid;
@@ -14,15 +13,16 @@
 }
 
 .page__header {
-  background-color: coral;
-  //position: absolute;
-  //width: 100%;
-  //z-index: 100;
+  background-color: inherit;
+  position: absolute;
+  width: 100%;
+  z-index: 50;
+  left: 0;
+  top: 0;
 }
 
 .page__main {
   margin-bottom: 0;
-  background-color: aqua;
 }
 
 .page__footer {

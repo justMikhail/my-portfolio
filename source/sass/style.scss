@@ -12,9 +12,20 @@
 
 // Common
 @import "./utils/common";
+@import "./utils/container";
 
-// Blocks
+// Main Blocks
 @import "./blocks/page";
+@import "./blocks/header";
 @import "./blocks/main";
+//@import "./blocks/footer";
+
+// Header
+@import "./blocks/nav";
+@import "./blocks/header-contact";
+
+// Main
+
+// Footer
 @import "./blocks/about-me";
 

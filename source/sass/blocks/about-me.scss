@@ -1,2 +1,14 @@
 .about-me {
 }
+
+.about-me__wrapper {
+  background-color: beige;
+  flex: 1 1 auto;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}

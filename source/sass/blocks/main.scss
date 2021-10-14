@@ -1,24 +1,13 @@
 .main {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  @include flexbox;
+  min-height: 100vh;
+  display: flex;
   flex-direction: column;
 }
 
 .main__about-me {
-  position: relative;
-  flex: 1 0 100%;
-}
-
-.main__fullscreen-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  background-color: aqua;
+  display: flex;
+  min-height: 100vh;
 }
 
 .main__portfolio {

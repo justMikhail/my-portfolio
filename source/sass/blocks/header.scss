@@ -1,0 +1,16 @@
+.header {
+
+}
+
+.header__inner {
+  @include flexbox;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.header__nav {
+}
+
+.header__contacts {
+}

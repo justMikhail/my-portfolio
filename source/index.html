@@ -11,50 +11,56 @@
 <body class="page__body">
 
   <header class="page__header header">
-    <nav class="header__nav nav nav--closed nav--nojs">
-      <button class="nav-toggle"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="nav-list">
-        <li class="nav-list__item">
-          <a href="#">Home</a>
-        </li>
-        <li class="nav-list__item">
-          <a href="#">About me</a>
-        </li>
-        <li class="nav-list__item">
-          <a href="#">Portfolio</a>
-        </li>
-        <li class="nav-list__item">
-          <a href="#">Контакты</a>
-        </li>
+    <div class="container">
+      <div class="header__inner">
+        <nav class="header__nav nav nav--closed nav--nojs">
+          <button class="nav-toggle"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">About me</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contacts header-contacts">
+          <ul class="header-contacts__list">
+            <li class="header-contacts__item">
+              <a href="tel:+79991335224" aria-label="Phone">
+                <span class="header-contacts-list__text">+7 999 133 52 24</span>
+                <svg class="header-contacts-list__icon" width="67" height="28">
+                  <use xlink:href="./img/icons/sprite.svg#phone"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-contacts__item">
+              <a href="mailto:mikhail.userpic@mail.com" aria-label="Email">
+                <span class="header-contacts__text">mikhail.userpic@mail.com</span>
+                <svg class="header-contacts__icon" width="67" height="28">
+                  <use xlink:href="./img/icons/sprite.svg#email"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </nav>
-    <div class="header__contacts header-contacts">
-      <ul class="header-contacts-list">
-        <li class="header-contacts-list__item">
-          <a href="tel:+79991335224" aria-label="Phone">
-            <span class="header-contacts-list__text">+7 999 133 52 24</span>
-            <svg class="header-contacts-list__icon" width="67" height="28">
-              <use xlink:href="./img/icons/sprite.svg#phone"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="header-contacts-list__item">
-          <a href="mailto:mikhail.userpic@mail.com" aria-label="Email">
-            <span class="header-contacts-list__text">mikhail.userpic@mail.com</span>
-            <svg class="header-contacts-list__icon" width="67" height="28">
-              <use xlink:href="./img/icons/sprite.svg#email"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
     </div>
   </header>
 
+
   <main class="page__main main">
-    <section class="main__about-me about-me">
-      <h2 class="visually-hidden">About me</h2>
-      <div class="main__fullscreen-bg about-me__bg ibg">
-        <img src="../img/bg_main.webp" alt="bg">
+    <section class="main__about-me main__about-me about-me">
+      <div class="about-me__wrapper">
+        <h1 class="about-me__title">About me</h1>
+        <p class="about-me__text">Frontend Development</p>
+        <a href="#" class="about-me__link">Кнопка</a>
       </div>
     </section>
     <section class="main__portfolio portfolio">
