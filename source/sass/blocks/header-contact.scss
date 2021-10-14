@@ -34,6 +34,7 @@
 
 .header-contacts__text {
   display: none;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     display: block;

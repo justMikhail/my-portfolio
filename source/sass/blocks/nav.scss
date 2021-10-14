@@ -15,6 +15,22 @@
   }
 }
 
+.nav__item {
+  @media (min-width: $tablet-width) {
+    padding: 10px 20px;
+  }
+}
+
+.nav__link {
+  color: $black;
+  //font
+  font-size: 20px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .nav-toggle {
 
 }

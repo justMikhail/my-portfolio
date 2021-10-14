@@ -1,5 +1,7 @@
 'use strict';
 
+const navLinks = document.querySelectorAll('.nav__link[data-goto]');
+
 const ibg = () => {
   let ibg=document.querySelectorAll(".ibg");
 
@@ -10,4 +12,27 @@ const ibg = () => {
   }
 }
 
+const onMenuLinkClick = (evt) => {
+  evt.preventDefault();
+  const menuLink = evt.target;
+  if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+    const currentNavLink = document.querySelector(menuLink.dataset.goto);
+    const currentNavLinkValue = currentNavLink.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+
+    window.scrollTo({
+      top: currentNavLinkValue,
+      behavior: "smooth"
+    });
+  }
+}
+
+const onMenuLinkClickHandler = () => {
+  if (navLinks.length > 0) {
+    navLinks.forEach(menuLink => {
+      menuLink.addEventListener("click", onMenuLinkClick);
+    });
+  }
+}
+
+onMenuLinkClickHandler();
 ibg();
