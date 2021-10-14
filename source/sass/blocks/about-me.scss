@@ -1,14 +1,31 @@
 .about-me {
+  @include flexbox;
+  align-items: center;
+  justify-content: center;
 }
 
-.about-me__wrapper {
-  background-color: beige;
-  flex: 1 1 auto;
-  max-width: 900px;
-  margin: 0 auto;
+.about-me__inner {
+  background-color: $white;
   text-align: center;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
+  height: 70%;
 }
+
+.about-me__img {
+  flex: 1 1 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.about-me__info-wrapper {
+  background-color: aqua;
+  flex: 1 1 50%;
+}
+
+.about-me__mouse-icon {
+  z-index: 50;
+}
+

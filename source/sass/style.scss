@@ -13,6 +13,7 @@
 // Common
 @import "./utils/common";
 @import "./utils/container";
+@import "./utils/animations";
 
 // Main Blocks
 @import "./blocks/page";
@@ -25,7 +26,9 @@
 @import "./blocks/header-contact";
 
 // Main
+@import "./blocks/about-me";
+@import "./blocks/mouse-icon";
 
 // Footer
-@import "./blocks/about-me";
+
 
