@@ -1,3 +1,24 @@
+.nav {
+
+}
+
+.nav__toggle {
+
+}
+
 .nav__list {
   @include flexbox;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.nav-toggle {
+
+}
+
+.nav-toggle__icon {
+
 }
