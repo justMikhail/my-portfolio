@@ -1,5 +1,11 @@
+.page {
+  height: 100%;
+  min-width: $mobile-width;
+}
+
 .page__body {
-  min-height: 100vh;
+  min-height: 100%;
+  overflow: hidden;
   box-sizing: border-box;
   // Grid
   display: grid;
@@ -8,11 +14,15 @@
 }
 
 .page__header {
-  margin-bottom: 0;
+  background-color: coral;
+  //position: absolute;
+  //width: 100%;
+  //z-index: 100;
 }
 
 .page__main {
   margin-bottom: 0;
+  background-color: aqua;
 }
 
 .page__footer {
