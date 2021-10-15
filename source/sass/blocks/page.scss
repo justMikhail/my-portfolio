@@ -14,9 +14,9 @@
 
 .page__header {
   background-color: inherit;
-  position: absolute;
+  position: fixed;
   width: 100%;
-  z-index: 50;
+  z-index: $header-z-index;
   left: 0;
   top: 0;
 }

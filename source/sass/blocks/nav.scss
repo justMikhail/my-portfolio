@@ -3,7 +3,10 @@
 }
 
 .nav__toggle {
-
+  display: none;
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
 }
 
 .nav__list {
@@ -17,7 +20,11 @@
 
 .nav__item {
   @media (min-width: $tablet-width) {
-    padding: 10px 20px;
+    padding: 10px 0 10px 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 0 10px 50px;
   }
 }
 
@@ -29,12 +36,57 @@
   &:hover {
     text-decoration: underline;
   }
+
+  @media (min-width: $tablet-width) {
+    //font
+    font-size: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //font
+    font-size: 28px;
+  }
 }
 
-.nav-toggle {
+.nav-burger {
+  --nav-toggle-width: 30px;
+  --nav-toggle-height: 18px;
 
+  position: relative;
+  z-index: $nav-toggle-z-index;
+  height: var(--nav-toggle-height);
+  width: var(--nav-toggle-width);
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    left: 0;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: $black;
+    top: 0;
+  }
+  &::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: $black;
+    bottom: 0;
+  }
 }
 
-.nav-toggle__icon {
-
+.nav-burger span {
+  left: 0;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  transition: all 0.3s ease 0s;
+  background-color: $black;
+  top: 50%;
+  transform: translate(0, -50%);
 }
