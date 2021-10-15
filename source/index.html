@@ -54,8 +54,18 @@
   <main class="page__main main">
     <section class="main__about-me about-me">
       <div class="about-me__inner container">
-        <div class="about-me__img ibg">
-          <img src="./img/about-me/photo-color-1-filter.jpg" alt="Photo Sitnikov Mikhail">
+        <div class="about-me__img">
+          <picture>
+            <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/about-me/my-photo/my-photo-color-1-filter-desctop@1x.webp 1x, ./img/about-me/my-photo/my-photo-color-1-filter-desctop@2x.webp 2x">
+            <source type="image/webp"
+                    srcset="./img/about-me/my-photo/my-photo-filter-mobile@1x.webp 1x, ./img/about-me/my-photo/my-photo-filter-mobile@2x.webp 2x">
+
+            <source media="(min-width: 768px)"
+                    srcset="./img/about-me/my-photo/my-photo-color-1-filter-desctop@1x.png 1x, ./img/about-me/my-photo/my-photo-color-1-filter-desctop@2x.png 2x">
+            <img src="./img/about-me/my-photo/my-photo-filter-mobile@1x.png" srcset="./img/about-me/my-photo/my-photo-filter-mobile@2x.png 2x"
+                 width="580" height="300" alt="My Promo Photo">
+          </picture>
         </div>
         <div class="about-me__info-wrapper">
           <div class="about-me__info">
