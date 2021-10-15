@@ -13,16 +13,18 @@
   <header class="page__header header">
     <div class="container">
       <div class="header__inner">
-        <nav class="header__nav nav nav--closed nav--nojs" role="navigation">
-          <div class="nav__burger nav-burger">
+        <nav class="header__nav nav" role="navigation">
+          <div class="nav__burger-icon nav-burger-icon">
             <span class="visually-hidden">Открыть меню</span>
-            <span class="nav-burger__medium"></span>
+            <span class="nav-burger-icon__medium"></span>
           </div>
-          <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" data-goto=".about-me" href="#">Home</a></li>
-            <li class="nav__item"><a class="nav__link" data-goto=".portfolio" href="#">Portfolio</a></li>
-            <li class="nav__item"><a class="nav__link" data-goto=".contacts" href="#">Contact</a></li>
-          </ul>
+          <div class="nav__list-wrapper nav__list-wrapper--closed">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" data-goto=".about-me" href="#">Home</a></li>
+              <li class="nav__item"><a class="nav__link" data-goto=".portfolio" href="#">Portfolio</a></li>
+              <li class="nav__item"><a class="nav__link" data-goto=".contacts" href="#">Contact</a></li>
+            </ul>
+          </div>
         </nav>
         <div class="header__contacts header-contacts">
           <ul class="header-contacts__list">

@@ -2,16 +2,52 @@
 
 }
 
-.nav__toggle {
+.nav__burger-icon {
   display: none;
   @media (max-width: $mobile-width-only) {
     display: block;
+    z-index: $nav-toggle-z-index;
+  }
+}
+
+.nav__list-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0 ,0.9);
+  transition: left 0.3s ease 0s;
+  @include flexbox;
+  flex-direction: column;
+  align-items: center;
+  padding-top: $min-height-header;
+  overflow: auto;
+
+  &::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: $min-height-header;
+    background-color: $white;
+  }
+
+  &--closed {
+    left: -100%;
+  }
+
+  &--opened {
+    left: 0;
   }
 }
 
 .nav__list {
   @include flexbox;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -19,6 +55,8 @@
 }
 
 .nav__item {
+  padding: 20px;
+
   @media (min-width: $tablet-width) {
     padding: 10px 0 10px 35px;
   }
@@ -29,9 +67,9 @@
 }
 
 .nav__link {
-  color: $black;
   //font
-  font-size: 20px;
+  font-size: 32px;
+  color: $white;
 
   &:hover {
     text-decoration: underline;
@@ -40,53 +78,11 @@
   @media (min-width: $tablet-width) {
     //font
     font-size: 26px;
+    color: $black;
   }
 
   @media (min-width: $desktop-width) {
     //font
     font-size: 28px;
   }
-}
-
-.nav-burger {
-  --nav-toggle-width: 30px;
-  --nav-toggle-height: 18px;
-
-  position: relative;
-  z-index: $nav-toggle-z-index;
-  height: var(--nav-toggle-height);
-  width: var(--nav-toggle-width);
-  cursor: pointer;
-
-  &::before {
-    content: "";
-    left: 0;
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    transition: all 0.3s ease 0s;
-    background-color: $black;
-    top: 0;
-  }
-  &::after {
-    content: "";
-    left: 0;
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    transition: all 0.3s ease 0s;
-    background-color: $black;
-    bottom: 0;
-  }
-}
-
-.nav-burger span {
-  left: 0;
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  transition: all 0.3s ease 0s;
-  background-color: $black;
-  top: 50%;
-  transform: translate(0, -50%);
 }

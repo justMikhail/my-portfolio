@@ -1,6 +1,8 @@
 'use strict';
 
 const navLinks = document.querySelectorAll('.nav__link[data-goto]');
+const navBurgerIcon = document.querySelector('.nav-burger-icon');
+const navListWrapper = document.querySelector('.nav__list-wrapper');
 
 const ibg = () => {
   let ibg=document.querySelectorAll(".ibg");
@@ -34,5 +36,21 @@ const onMenuLinkClickHandler = () => {
   }
 }
 
+const onNavBurgerIconCLick = (evt) => {
+  evt.preventDefault();
+  document.body.classList.toggle('scroll-lock');
+  navBurgerIcon.classList.toggle('nav-burger-icon--closed');
+  navBurgerIcon.classList.toggle('nav-burger-icon--opened');
+  navListWrapper.classList.toggle('nav__list-wrapper--closed');
+  navListWrapper.classList.toggle('nav__list-wrapper--opened');
+}
+
+const onNavBurgerIconCLickHandler = (BurgerIcon) => {
+  if (BurgerIcon) {
+    BurgerIcon.addEventListener("click", onNavBurgerIconCLick);
+  }
+}
+
+onNavBurgerIconCLickHandler(navBurgerIcon);
 onMenuLinkClickHandler();
 ibg();

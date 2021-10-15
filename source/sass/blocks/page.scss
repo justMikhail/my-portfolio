@@ -12,6 +12,10 @@
   align-content: start;
 }
 
+.page__body.scroll-lock {
+  overflow: hidden;
+}
+
 .page__header {
   background-color: inherit;
   position: fixed;
