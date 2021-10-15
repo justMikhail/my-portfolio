@@ -11,7 +11,25 @@
 @import "./utils/mixins.scss";
 
 // Common
+@import "./utils/common";
+@import "./utils/container";
+@import "./utils/animations";
 
+// Main Blocks
+@import "./blocks/page";
+@import "./blocks/header";
+@import "./blocks/main";
+//@import "./blocks/footer";
 
-// Blocks
+// Header
+@import "./blocks/nav";
+@import "./blocks/nav-burger-icon";
+@import "./blocks/header-contact";
+
+// Main
+@import "./blocks/about-me";
+@import "./blocks/mouse-icon";
+
+// Footer
+
 

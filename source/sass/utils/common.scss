@@ -1,8 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 *,
-*::before,
-*::after {
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+ul li{list-style: none;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
 
 // focus-visible
 [data-js-focus-visible] :focus:not([data-focus-visible-added]) {
@@ -18,14 +30,6 @@ img {
 a {
   text-decoration: none;
   outline: none;
-}
-
-body {
-  font-family: "Oswald", "Arial", sans-serif;
-}
-
-body:not(:-moz-handler-blocked) fieldset {
-  display: table-cell;
 }
 
 input,
@@ -50,13 +54,24 @@ button {
   overflow: hidden;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  /* display: none; <- Crashes Chrome on hover */
-  appearance: none;
-  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+.ibg {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-input[type="number"] {
-  appearance: textfield; /* Firefox */
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+// Fix
+body:not(:-moz-handler-blocked) fieldset {
+  display: table-cell;
 }

@@ -1,0 +1,19 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__about-me {
+  background-color: $white;
+  display: flex;
+  min-height: 100vh;
+}
+
+.main__portfolio {
+  background-color: blueviolet;
+}
+
+.main__contacts {
+  background-color: blanchedalmond;
+}

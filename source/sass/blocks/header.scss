@@ -1,0 +1,18 @@
+.header {
+  background-color: inherit;
+}
+
+.header__inner {
+  @include flexbox;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  min-height: $min-height-header;
+}
+
+.header__nav {
+}
+
+.header__contacts {
+
+}

@@ -1,0 +1,30 @@
+.mouse-icon {
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  border: 2px solid $black;
+  border-radius: 16px;
+  height: 50px;
+  width: 30px;
+  margin-left: -15px;
+  display: block;
+  opacity: 0.4;
+}
+
+.mouse-icon__wheel {
+  position: relative;
+  border-radius: 10px;
+  background: $black;
+  width: 4px;
+  height: 10px;
+  top: 6px;
+  margin-left: auto;
+  margin-right: auto;
+
+  animation-name: mouse-icon-drop;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
