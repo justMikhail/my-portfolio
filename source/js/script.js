@@ -14,12 +14,20 @@ const ibg = () => {
   }
 }
 
-const onMenuLinkClick = (evt) => {
+const onNavLinkClick = (evt) => {
   evt.preventDefault();
   const menuLink = evt.target;
   if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
     const currentNavLink = document.querySelector(menuLink.dataset.goto);
     const currentNavLinkValue = currentNavLink.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+
+    if (navBurgerIcon.classList.contains('nav-burger-icon--opened')) {
+      document.body.classList.remove('scroll-lock');
+      navBurgerIcon.classList.toggle('nav-burger-icon--closed');
+      navBurgerIcon.classList.toggle('nav-burger-icon--opened');
+      navListWrapper.classList.toggle('nav__list-wrapper--opened');
+      navListWrapper.classList.toggle('nav__list-wrapper--closed');
+    }
 
     window.scrollTo({
       top: currentNavLinkValue,
@@ -28,10 +36,10 @@ const onMenuLinkClick = (evt) => {
   }
 }
 
-const onMenuLinkClickHandler = () => {
+const onNavLinkClickHandler = () => {
   if (navLinks.length > 0) {
     navLinks.forEach(menuLink => {
-      menuLink.addEventListener("click", onMenuLinkClick);
+      menuLink.addEventListener("click", onNavLinkClick);
     });
   }
 }
@@ -52,5 +60,5 @@ const onNavBurgerIconCLickHandler = (BurgerIcon) => {
 }
 
 onNavBurgerIconCLickHandler(navBurgerIcon);
-onMenuLinkClickHandler();
+onNavLinkClickHandler();
 ibg();

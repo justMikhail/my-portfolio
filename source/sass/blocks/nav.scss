@@ -4,6 +4,7 @@
 
 .nav__burger-icon {
   display: none;
+
   @media (max-width: $mobile-width-only) {
     display: block;
     z-index: $nav-toggle-z-index;
@@ -11,27 +12,19 @@
 }
 
 .nav__list-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0 ,0.9);
-  transition: left 0.3s ease 0s;
-  @include flexbox;
-  flex-direction: column;
-  align-items: center;
-  padding-top: $min-height-header;
-  overflow: auto;
-
-  &::before {
-    content: "";
+  @media (max-width: $mobile-width-only) {
     position: fixed;
-    width: 100%;
     top: 0;
     left: 0;
-    height: $min-height-header;
-    background-color: $white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0 ,0.9);
+    transition: left 0.3s ease 0s;
+    @include flexbox;
+    flex-direction: column;
+    align-items: center;
+    padding-top: $min-height-header;
+    overflow: auto;
   }
 
   &--closed {
@@ -40,6 +33,16 @@
 
   &--opened {
     left: 0;
+
+    &::before {
+      content: "";
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: $min-height-header;
+      background-color: $white;
+    }
   }
 }
 
@@ -84,5 +87,6 @@
   @media (min-width: $desktop-width) {
     //font
     font-size: 28px;
+    color: $black;
   }
 }
