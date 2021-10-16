@@ -1,28 +1,21 @@
 .about-me {
-  @include flexbox;
-  align-items: center;
-  justify-content: center;
+  background-color: $white;
 }
 
 .about-me__inner {
-  background-color: $white;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  height: 70%;
+
 }
 
 .about-me__img {
-  flex: 1 1 50%;
-  width: 100%;
-  height: 100%;
+  background-color: inherit;
 }
 
 .about-me__info-wrapper {
-  flex: 1 1 50%;
-  background-color: aqua;
+  background-color: inherit;
+}
+
+.about-me__info {
+  background-color: inherit;
 }
 
 .about-me__mouse-icon {

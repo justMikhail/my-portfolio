@@ -23,7 +23,7 @@
     @include flexbox;
     flex-direction: column;
     align-items: center;
-    padding-top: $min-height-header;
+    padding-top: $height-header-mobile;
     overflow: auto;
   }
 
@@ -40,7 +40,7 @@
       width: 100%;
       top: 0;
       left: 0;
-      height: $min-height-header;
+      height: $height-header-mobile;
       background-color: $white;
     }
   }

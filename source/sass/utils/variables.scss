@@ -8,13 +8,16 @@ $max-mobile-width: 480px;
 $max-tablet-width: 1280px;
 $max-desktop-width: 1300px;
 
-// Colors
-$white: #ffffff;
-$black: #000000;
-
 // Sizes
-$min-height-header: 70px;
+$height-header-mobile: 70px;
 
 // z-indexes
 $header-z-index: 10;
 $nav-toggle-z-index: 5;
+
+// Colors
+$white: #ffffff;
+$black: #000000;
+
+$primary-color: #375CC2;
+$secondary-color: #EC7F32;

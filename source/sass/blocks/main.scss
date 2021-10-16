@@ -2,11 +2,10 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: inherit;
 }
 
 .main__about-me {
-  background-color: $white;
-  display: flex;
   min-height: 100vh;
 }
 

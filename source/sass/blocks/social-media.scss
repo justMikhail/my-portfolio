@@ -1,0 +1,23 @@
+.social-media {
+  @include flexbox;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media__list {
+  @include flexbox;
+  flex-direction: row;
+}
+
+.social-media__item {
+  padding: 5px 10px;
+}
+
+.social-media__link {
+
+}
+
+.social-media__icon {
+
+}
