@@ -5,6 +5,7 @@
 
 .multiple-title__static-text {
   background-color: inherit;
+  margin-right: 8px;
   //Fonts
   @include primary-fonts;
   font-weight: 700;
@@ -14,18 +15,17 @@
 
 .multiple-title__dynamic-texts {
   background-color: inherit;
-  margin-left: 8px;
   height: 26px;
   //Fonts
   line-height: 26px;
-  //overflow: hidden;
+  overflow: hidden;
 }
 
 .multiple-title__dynamic-texts li {
   background-color: inherit;
   position: relative;
   top: 0;
-  animation: slide 6s steps(2) infinite;
+  animation: slide 3s steps(2) infinite;
   //Fonts
   @include  primary-fonts;
   font-weight: 700;
@@ -46,5 +46,5 @@
   left: 0;
   border-left: 2px solid $primary-color;
   background-color: inherit;
-  animation: typing 1.5s steps(20) infinite;
+  animation: typing 3s steps(18) infinite;
 }
