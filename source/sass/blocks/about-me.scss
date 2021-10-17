@@ -12,11 +12,11 @@
 }
 
 .about-me__img {
-  padding-top: $height-header-mobile;
+  margin-top: $height-header-mobile;
 
   @media (min-width: $tablet-width) {
     flex: 0 1 45%;
-    padding-top: 0;
+    margin-top: $height-header-tablet;
   }
 }
 
@@ -27,6 +27,7 @@
 
   @media (min-width: $tablet-width) {
     flex: 0 1 55%;
+    margin-top: $height-header-tablet;
   }
 }
 
