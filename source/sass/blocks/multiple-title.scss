@@ -4,16 +4,20 @@
 }
 
 .multiple-title__static-text {
+  --static-text-size-mobile: 22px;
+  --static-text-size-tablet: 22px;
+  --static-text-size-desctop: 22px;
+
   background-color: inherit;
   margin-right: 8px;
   //Fonts
-  @include primary-fonts;
+  @include primary-font;
   font-weight: 700;
-  font-size: 22px;
-  color: black;
+  font-size: var(--static-text-size-mobile);
+  color: $black;
 }
 
-.multiple-title__dynamic-texts {
+.multiple-title__dynamic-list {
   background-color: inherit;
   height: 26px;
   //Fonts
@@ -21,30 +25,30 @@
   overflow: hidden;
 }
 
-.multiple-title__dynamic-texts li {
+.multiple-title__dynamic-list li {
   background-color: inherit;
   position: relative;
   top: 0;
-  animation: slide 3s steps(2) infinite;
+  animation: slide 6s steps(2) infinite;
   //Fonts
-  @include  primary-fonts;
+  @include  primary-font;
   font-weight: 700;
   font-size: 22px;
   color: $primary-color;
 }
 
-.multiple-title__dynamic-texts li span {
+.multiple-title__dynamic-list li span {
   background-color: inherit;
   position: relative;
-}
 
-.multiple-title__dynamic-texts li span::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  border-left: 2px solid $primary-color;
-  background-color: inherit;
-  animation: typing 3s steps(18) infinite;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    border-left: 2px solid $primary-color;
+    background-color: inherit;
+    animation: typing 3s steps(18) infinite;
+  }
 }

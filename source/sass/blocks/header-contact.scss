@@ -1,18 +1,22 @@
 .header-contacts {
-  z-index: $nav-toggle-z-index;
+  z-index: $nav-burger-z-index;
 }
 
 .header-contacts__list {
   @include flexbox;
+  flex-wrap: wrap;
   flex-direction: row;
 }
 
 .header-contacts__item {
-
+  margin-right: 25px;
 }
 
 .header-contacts__link {
-
+  @include flexbox;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: center;
 }
 
 .header-contacts__icon {

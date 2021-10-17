@@ -1,13 +1,15 @@
-@keyframes mouse-icon-drop	{
+@keyframes drop	{
   0%   { top:5px;  opacity: 0;}
   30%  { top:10px; opacity: 1;}
   100% { top:25px; opacity: 0;}
 }
 
 @keyframes typing {
+  40%, 60% {
+    left: calc(100% + 2px);
+  }
   100%{
-    left: 100%;
-    margin: 0 -35px 0 35px;
+    left: 0;
   }
 }
 

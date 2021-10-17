@@ -29,7 +29,12 @@
         <div class="header__contacts header-contacts">
           <ul class="header-contacts__list">
             <li class="header-contacts__item">
-              <a class="header-contacts__link" href="tel:+79991335224" aria-label="Phone">
+              <a
+                class="header-contacts__link"
+                href="tel:+79991335224"
+                aria-label="Phone"
+                rel="noreferrer"
+              >
                 <span class="header-contacts__text">+7 999 133 52 24</span>
                 <svg class="header-contacts__icon header-contacts__icon--phone" width="30" height="30">
                   <use xlink:href="./img/icons/sprite.svg#phone"></use>
@@ -37,7 +42,12 @@
               </a>
             </li>
             <li class="header-contacts__item">
-              <a class="header-contacts__link" href="mailto:mikhail.userpic@mail.com" aria-label="Email">
+              <a
+                class="header-contacts__link"
+                href="mailto:mikhail.userpic@mail.com"
+                aria-label="Email"
+                rel="noreferrer"
+              >
                 <span class="header-contacts__text">mikhail.userpic@mail.com</span>
                 <svg class="header-contacts__icon header-contacts__icon--email" width="30" height="30">
                   <use xlink:href="./img/icons/sprite.svg#email"></use>
@@ -65,16 +75,19 @@
             <img src="./img/about-me/my-photo/my-photo-filter-mobile@1x.png" srcset="./img/about-me/my-photo/my-photo-filter-mobile@2x.png 2x"
                  width="580" height="300" alt="My Promo Photo">
           </picture>
-          </div>
+        </div>
         <div class="about-me__info-wrapper">
           <div class="about-me__info">
-            <div class="multiple-title">
+            <div class="about-me__multiple-title multiple-title">
               <div class="multiple-title__static-text">I&#8242;m a</div>
-              <ul class="multiple-title__dynamic-texts">
+              <ul class="multiple-title__dynamic-list">
                 <li><span>Mikhail</span></li>
                 <li><span>Frontend Developer</span></li>
               </ul>
             </div>
+            <p class="about-me__text">
+              I Want to write clean, easily maintained, and efficient code for creating complex web applications.
+            </p>
           </div>
           <section class="about-me__social-media social-media">
             <h2 class="visually-hidden">Links to social networks and professional communities</h2>
@@ -82,7 +95,7 @@
               <li class="social-media__item">
                 <a class="social-media__link" href="https://t.me/just_Mikhail">
                   <span class="visually-hidden">Telegram</span>
-                  <svg class="social-media__icon" width="32" height="32">
+                  <svg class="social-media__icon" width="35" height="35">
                     <use xlink:href="./img/icons/sprite.svg#Telegram_black"></use>
                   </svg>
                 </a>
@@ -90,7 +103,7 @@
               <li class="social-media__item">
                 <a class="social-media__link" href="https://www.instagram.com/michaelboyhood/">
                   <span class="visually-hidden">Instagram Link</span>
-                  <svg class="social-media__icon" width="32" height="32">
+                  <svg class="social-media__icon" width="35" height="35">
                     <use xlink:href="./img/icons/sprite.svg#Instagram_black"></use>
                   </svg>
                 </a>
@@ -98,7 +111,7 @@
               <li class="social-media__item">
                 <a class="social-media__link" href="https://hh.ru/resume/b3f3dff6ff0958a6c10039ed1f77544a6f687a">
                   <span class="visually-hidden">Head Hunter Link</span>
-                  <svg class="social-media__icon" width="32" height="32">
+                  <svg class="social-media__icon" width="35" height="35">
                     <use xlink:href="./img/icons/sprite.svg#hh"></use>
                   </svg>
                 </a>
@@ -106,7 +119,7 @@
               <li class="social-media__item">
                 <a class="social-media__link" href="https://www.linkedin.com/in/michael-si/">
                   <span class="visually-hidden">LinkedIn Link</span>
-                  <svg class="social-media__icon" width="32" height="32">
+                  <svg class="social-media__icon" width="35" height="35">
                     <use xlink:href="./img/icons/sprite.svg#LinkedIN_black"></use>
                   </svg>
                 </a>
@@ -114,20 +127,20 @@
               <li class="social-media__item">
                 <a class="social-media__link" href="https://github.com/justMikhail">
                   <span class="visually-hidden">Github Link</span>
-                  <svg class="social-media__icon" width="32" height="32">
+                  <svg class="social-media__icon" width="35" height="35">
                     <use xlink:href="./img/icons/sprite.svg#Github_black"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </section>
-          <dib class="about-me__buttons">
-            <a class="about-me__button button button--about-me" href="#">View my works</a>
-            <a class="about-me__button button button--about-me" href="#">Download my CV</a>
-          </dib>
-          </div>
-        <div class="about-me__mouse-icon mouse-icon">
-          <div class="mouse-icon__wheel"></div>
+          <ul class="about-me__buttons">
+            <li class="about-me__button"><a href="#">View works</a></li>
+            <li class="about-me__button"><a href="#">View CV</a></li>
+          </ul>
+        </div>
+        <div class="about-me__scroll-down-icon scroll-down-icon">
+          <div class="scroll-down-icon__wheel"></div>
         </div>
       </section>
       <section class="main__portfolio portfolio">
@@ -143,17 +156,19 @@
   </main>
 
   <footer class="page__footer footer">
-    <section class="footer__contacts contacts">
-      <h2>All contacts</h2>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda consectetur consequuntur debitis deleniti dolor ea eligendi, error expedita ipsam ipsum minima natus nostrum quibusdam quos saepe soluta suscipit totam.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt doloribus eveniet expedita itaque iusto labore libero magni modi neque nihil officia, officiis possimus quam ullam vel veritatis voluptatibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda consectetur consequuntur debitis deleniti dolor ea eligendi, error expedita ipsam ipsum minima natus nostrum quibusdam quos saepe soluta suscipit totam.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt doloribus eveniet expedita itaque iusto labore libero magni modi neque nihil officia, officiis possimus quam ullam vel veritatis voluptatibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda consectetur consequuntur debitis deleniti dolor ea eligendi, error expedita ipsam ipsum minima natus nostrum quibusdam quos saepe soluta suscipit totam.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt doloribus eveniet expedita itaque iusto labore libero magni modi neque nihil officia, officiis possimus quam ullam vel veritatis voluptatibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda consectetur consequuntur debitis deleniti dolor ea eligendi, error expedita ipsam ipsum minima natus nostrum quibusdam quos saepe soluta suscipit totam.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt doloribus eveniet expedita itaque iusto labore libero magni modi neque nihil officia, officiis possimus quam ullam vel veritatis voluptatibus.
-    </section>
+    <div class="container">
+      <section class="footer__contacts contacts">
+        <h2>All contacts</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda consectetur consequuntur debitis deleniti dolor ea eligendi, error expedita ipsam ipsum minima natus nostrum quibusdam quos saepe soluta suscipit totam.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt doloribus eveniet expedita itaque iusto labore libero magni modi neque nihil officia, officiis possimus quam ullam vel veritatis voluptatibus.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda consectetur consequuntur debitis deleniti dolor ea eligendi, error expedita ipsam ipsum minima natus nostrum quibusdam quos saepe soluta suscipit totam.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt doloribus eveniet expedita itaque iusto labore libero magni modi neque nihil officia, officiis possimus quam ullam vel veritatis voluptatibus.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda consectetur consequuntur debitis deleniti dolor ea eligendi, error expedita ipsam ipsum minima natus nostrum quibusdam quos saepe soluta suscipit totam.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt doloribus eveniet expedita itaque iusto labore libero magni modi neque nihil officia, officiis possimus quam ullam vel veritatis voluptatibus.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda consectetur consequuntur debitis deleniti dolor ea eligendi, error expedita ipsam ipsum minima natus nostrum quibusdam quos saepe soluta suscipit totam.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt doloribus eveniet expedita itaque iusto labore libero magni modi neque nihil officia, officiis possimus quam ullam vel veritatis voluptatibus.
+      </section>
+    </div>
   </footer>
 
   <script src="./node_modules/focus-visible/dist/focus-visible.min.js"></script>
