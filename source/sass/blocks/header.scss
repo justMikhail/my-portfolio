@@ -5,7 +5,7 @@
 
 .header__inner {
   @include flexbox;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   min-height: $height-header-mobile;

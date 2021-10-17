@@ -12,6 +12,9 @@
 
 .social-media__item {
   padding: 5px 10px;
+  @include flexbox;
+  align-items: center;
+  justify-content: center;
 
   @media (min-width: $desktop-width) {
     padding: 5px 15px;
@@ -19,7 +22,19 @@
 }
 
 .social-media__link {
+  @include flexbox;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 5px;
 
+  &:focus {
+    @include basic-focus;
+  }
+
+  &:focus svg {
+    transition: transform 0.1s linear;
+    transform: scale(1.1);
+  }
 }
 
 .social-media__icon {

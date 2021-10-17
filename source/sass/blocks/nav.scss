@@ -72,25 +72,21 @@
 
 .nav__link {
   //font
+  @include primary-font;
   font-size: 32px;
   color: $white;
 
-  @media (min-width: $tablet-width) {
-    padding: 10px 0;
-    //font
-    font-size: 26px;
-    color: $black;
+  &:focus {
+    @include basic-focus;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    padding: 8px 2px;
     background-image: linear-gradient($primary-color, $primary-color);
     background-position: 20% 100%;
     background-repeat: no-repeat;
     background-size: 0 2px;
     transition: background-size 0.3s;
-    //font
-    font-size: 28px;
-    color: $black;
 
     &:hover,
     &:focus {
@@ -100,6 +96,16 @@
     &:active {
       background-size: 100% 2px;
     }
+
+    //font
+    font-size: 24px;
+    color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 2px;
+    //font
+    font-size: 28px;
 
     &--current {
       @media (min-width: $tablet-width) {
