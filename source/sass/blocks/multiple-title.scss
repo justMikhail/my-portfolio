@@ -5,8 +5,8 @@
 
 .multiple-title__static-text {
   --static-text-size-mobile: 22px;
-  --static-text-size-tablet: 22px;
-  --static-text-size-desctop: 22px;
+  --static-text-size-tablet: 32px;
+  --static-text-size-desctop: 36px;
 
   background-color: inherit;
   margin-right: 8px;
@@ -15,26 +15,65 @@
   font-weight: 700;
   font-size: var(--static-text-size-mobile);
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    //Fonts
+    font-size: var(--static-text-size-tablet);
+  }
+
+  @media (min-width: $desktop-width) {
+    //Fonts
+    font-size: var(--static-text-size-desctop);
+  }
 }
 
 .multiple-title__dynamic-list {
+  --dynamic-list-size-mobile: 26px;
+  --dynamic-list-size-tablet: 36px;
+  --dynamic-list-size-desctop: 40px;
+
   background-color: inherit;
-  height: 26px;
-  //Fonts
-  line-height: 26px;
+  height: var(--dynamic-list-size-mobile);
+  line-height: var(--dynamic-list-size-mobile);
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    height: var(--dynamic-list-size-tablet);
+    line-height: var(--dynamic-list-size-tablet);
+  }
+
+  @media (min-width: $desktop-width) {
+    height: var(--dynamic-list-size-desctop);
+    line-height: var(--dynamic-list-size-desctop);
+  }
 }
 
 .multiple-title__dynamic-list li {
+  --dynamic-text-size-mobile: 22px;
+  --dynamic-text-size-tablet: 32px;
+  --dynamic-text-size-desctop: 36px;
+
   background-color: inherit;
   position: relative;
   top: 0;
-  animation: slide 6s steps(2) infinite;
+  animation: slide-mobile 6s steps(2) infinite;
   //Fonts
   @include  primary-font;
   font-weight: 700;
-  font-size: 22px;
+  font-size: var(--dynamic-text-size-mobile);
   color: $primary-color;
+
+  @media (min-width: $tablet-width) {
+    animation: slide-tablet 6s steps(2) infinite;
+    //Fonts
+    font-size: var(--dynamic-text-size-tablet);
+  }
+
+  @media (min-width: $desktop-width) {
+    animation: slide-desktop 6s steps(2) infinite;
+    //Fonts
+    font-size: var(--dynamic-text-size-desctop);
+  }
 }
 
 .multiple-title__dynamic-list li span {

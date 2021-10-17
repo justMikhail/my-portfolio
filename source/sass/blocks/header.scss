@@ -1,5 +1,6 @@
 .header {
-  background-color: inherit;
+  background-color: $white;
+  min-height: $height-header-mobile;
 }
 
 .header__inner {
@@ -8,6 +9,10 @@
   align-items: center;
   justify-content: space-between;
   min-height: $height-header-mobile;
+
+  @media (min-width: $tablet-width) {
+    min-height: $height-header-tablet;
+  }
 }
 
 .header__nav {
