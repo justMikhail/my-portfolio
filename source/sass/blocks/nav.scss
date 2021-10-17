@@ -66,7 +66,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 0 10px 50px;
+    margin: 10px 0 10px 50px;
   }
 }
 
@@ -76,24 +76,21 @@
   color: $white;
 
   @media (min-width: $tablet-width) {
+    padding: 10px 0;
     //font
     font-size: 26px;
     color: $black;
   }
 
   @media (min-width: $desktop-width) {
-    //font
-    font-size: 28px;
-    color: $black;
-  }
-
-  @media (min-width: $tablet-width) {
-    min-height: 40px;
     background-image: linear-gradient($primary-color, $primary-color);
     background-position: 20% 100%;
     background-repeat: no-repeat;
     background-size: 0 2px;
     transition: background-size 0.3s;
+    //font
+    font-size: 28px;
+    color: $black;
 
     &:hover,
     &:focus {

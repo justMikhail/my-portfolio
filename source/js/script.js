@@ -1,6 +1,6 @@
 'use strict';
 
-const navLinks = document.querySelectorAll('.nav__link[data-goto]');
+const navLinks = document.querySelectorAll('.goto-block[data-goto]');
 const navBurgerIcon = document.querySelector('.nav-burger-icon');
 const navListWrapper = document.querySelector('.nav__list-wrapper');
 

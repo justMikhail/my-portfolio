@@ -20,9 +20,9 @@
           </div>
           <div class="nav__list-wrapper nav__list-wrapper--closed">
             <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link" data-goto=".about-me" href="#">Home</a></li>
-              <li class="nav__item"><a class="nav__link" data-goto=".portfolio" href="#">Portfolio</a></li>
-              <li class="nav__item"><a class="nav__link" data-goto=".contacts" href="#">Contact</a></li>
+              <li class="nav__item"><a class="nav__link goto-block" data-goto=".about-me" href="#">Home</a></li>
+              <li class="nav__item"><a class="nav__link goto-block" data-goto=".portfolio" href="#">Portfolio</a></li>
+              <li class="nav__item"><a class="nav__link goto-block" data-goto=".contacts" href="#">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -79,56 +79,72 @@
         <div class="about-me__info-wrapper">
           <div class="about-me__info">
             <div class="about-me__multiple-title multiple-title">
-              <div class="multiple-title__static-text">I&#8242;m a</div>
+              <div class="multiple-title__static-text">I&#8242;m</div>
               <ul class="multiple-title__dynamic-list">
                 <li><span>Mikhail</span></li>
-                <li><span>Frontend Developer</span></li>
+                <li><span>a Frontend Developer</span></li>
               </ul>
             </div>
             <p class="about-me__text">
               I&nbsp;Want to&nbsp;write clean,
               easily maintained,
               and efficient code for creating complex web applications.
+              I really enjoy solving problems as well as making things pretty and easy to use.
             </p>
           </div>
           <section class="about-me__social-media social-media">
             <h2 class="visually-hidden">Links to social networks and professional communities</h2>
             <ul class="social-media__list">
               <li class="social-media__item">
-                <a class="social-media__link" href="https://t.me/just_Mikhail">
-                  <span class="visually-hidden">Telegram</span>
+                <a class="social-media__link"
+                   href="https://t.me/just_Mikhail"
+                   title="Connect with me on Telegram"
+                   aria-label="Telegram"
+                >
                   <svg class="social-media__icon" width="35" height="35">
                     <use xlink:href="./img/icons/sprite.svg#Telegram_black"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-media__item">
-                <a class="social-media__link" href="https://www.instagram.com/michaelboyhood/">
-                  <span class="visually-hidden">Instagram Link</span>
+                <a class="social-media__link"
+                   href="https://www.instagram.com/michaelboyhood/"
+                   title="Follow me on Instagram"
+                   aria-label="Instagram Link"
+                >
                   <svg class="social-media__icon" width="35" height="35">
                     <use xlink:href="./img/icons/sprite.svg#Instagram_black"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-media__item">
-                <a class="social-media__link" href="https://hh.ru/resume/b3f3dff6ff0958a6c10039ed1f77544a6f687a">
-                  <span class="visually-hidden">Head Hunter Link</span>
+                <a class="social-media__link"
+                   href="https://hh.ru/resume/b3f3dff6ff0958a6c10039ed1f77544a6f687a"
+                   title="View my CV on Head Hunter"
+                   aria-label="Head Hunter Link"
+                >
                   <svg class="social-media__icon" width="35" height="35">
                     <use xlink:href="./img/icons/sprite.svg#hh"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-media__item">
-                <a class="social-media__link" href="https://www.linkedin.com/in/michael-si/">
-                  <span class="visually-hidden">LinkedIn Link</span>
+                <a class="social-media__link"
+                   href="https://www.linkedin.com/in/michael-si/"
+                   title="Connect with me on Linkedin"
+                   aria-label="LinkedIn Link"
+                >
                   <svg class="social-media__icon" width="35" height="35">
                     <use xlink:href="./img/icons/sprite.svg#LinkedIN_black"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-media__item">
-                <a class="social-media__link" href="https://github.com/justMikhail">
-                  <span class="visually-hidden">Github Link</span>
+                <a class="social-media__link"
+                   href="https://github.com/justMikhail"
+                   title="View my Github Profile"
+                   aria-label="Github Link"
+                >
                   <svg class="social-media__icon" width="35" height="35">
                     <use xlink:href="./img/icons/sprite.svg#Github_black"></use>
                   </svg>
@@ -137,10 +153,10 @@
             </ul>
           </section>
           <ul class="about-me__buttons">
-            <li class="about-me__button">
-              <a class="nav__link" data-goto=".portfolio" href="#">View works</a>
+            <li class="about-me__button about-me__button--first">
+              <a class="goto-block" data-goto=".portfolio" href="#">View works</a>
             </li>
-            <li class="about-me__button">
+            <li class="about-me__button about-me__button--second">
               <a href="https://hh.ru/resume/b3f3dff6ff0958a6c10039ed1f77544a6f687a">View CV</a>
             </li>
           </ul>
