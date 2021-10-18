@@ -114,10 +114,10 @@ const sprite = () => {
     .src("source/img/icons/**/*.svg")
     .pipe(svgstore())
     .pipe(cheerio({
-      run: function ($) {
-        $('[fill]').removeAttr('fill');
-        $('[style]').removeAttr('style');
-      },
+       // run: function ($) {
+       //   $('[fill]').removeAttr('fill');
+       //   $('[style]').removeAttr('style');
+       // },
       parserOptions: { xmlMode: true }
     }))
     .pipe(rename("sprite.svg"))

@@ -61,7 +61,7 @@
   </header>
 
   <main class="page__main main">
-    <div class="container">
+    <div class="container container--fullscreen">
       <section class="main__about-me about-me">
         <h1 class="visually-hidden">Sitnikov Mikhail. Frontend developer and grate friend.</h1>
         <div class="about-me__img">
@@ -165,30 +165,61 @@
           <div class="scroll-down-icon__wheel"></div>
         </div>
       </section>
-      <section class="main__portfolio portfolio">
-        <h2>My portfolio</h2>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda consectetur consequuntur debitis deleniti dolor ea eligendi, error expedita ipsam ipsum minima natus nostrum quibusdam quos saepe soluta suscipit totam.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt doloribus eveniet expedita itaque iusto labore libero magni modi neque nihil officia, officiis possimus quam ullam vel veritatis voluptatibus.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda consectetur consequuntur debitis deleniti dolor ea eligendi, error expedita ipsam ipsum minima natus nostrum quibusdam quos saepe soluta suscipit totam.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt doloribus eveniet expedita itaque iusto labore libero magni modi neque nihil officia, officiis possimus quam ullam vel veritatis voluptatibus.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda consectetur consequuntur debitis deleniti dolor ea eligendi, error expedita ipsam ipsum minima natus nostrum quibusdam quos saepe soluta suscipit totam.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt doloribus eveniet expedita itaque iusto labore libero magni modi neque nihil officia, officiis possimus quam ullam vel veritatis voluptatibus.
-      </section>
     </div>
+    <section class="main__portfolio portfolio">
+      <div class="container">
+        <h2 class="portfolio__title">My portfolio</h2>
+        <p class="portfolio__subtitle">
+          This are a few pet projects in which I have been working
+          on during my learning process.
+        </p>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <article class="portfolio__card portfolio-card">
+              <div class="portfolio-card__info">
+                <img
+                  class="portfolio-card__img"
+                  src="./img/portfolio/site-previews/cat-energy-preview.png"
+                  alt="Cat Energy Preview Screen"
+                >
+                <h3 class="portfolio-card__title">Cat Energy</h3>
+                <p class="portfolio-card__subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, vero.
+                </p>
+              </div>
+
+              <ul class="portfolio-card__tech-stack">
+                <li class="portfolio-card__tech-stack-item">
+                  <svg width="30" height="30">
+                    <use xlink:href="./img/icons/sprite.svg#html-5"></use>
+                  </svg>
+                </li>
+                <li class="portfolio-card__tech-stack-item">
+                  <svg width="30" height="30">
+                    <use xlink:href="./img/icons/sprite.svg#sass"></use>
+                  </svg>
+                </li>
+                <li class="portfolio-card__tech-stack-item">
+                  <svg width="30" height="30">
+                    <use xlink:href="./img/icons/sprite.svg#javascript"></use>
+                  </svg>
+                </li>
+              </ul>
+
+              <div class="portfolio-card__bg"></div>
+            </article>
+          </li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <footer class="page__footer footer">
     <div class="container">
       <section class="footer__contacts contacts">
         <h2>All contacts</h2>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda consectetur consequuntur debitis deleniti dolor ea eligendi, error expedita ipsam ipsum minima natus nostrum quibusdam quos saepe soluta suscipit totam.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt doloribus eveniet expedita itaque iusto labore libero magni modi neque nihil officia, officiis possimus quam ullam vel veritatis voluptatibus.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda consectetur consequuntur debitis deleniti dolor ea eligendi, error expedita ipsam ipsum minima natus nostrum quibusdam quos saepe soluta suscipit totam.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt doloribus eveniet expedita itaque iusto labore libero magni modi neque nihil officia, officiis possimus quam ullam vel veritatis voluptatibus.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda consectetur consequuntur debitis deleniti dolor ea eligendi, error expedita ipsam ipsum minima natus nostrum quibusdam quos saepe soluta suscipit totam.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt doloribus eveniet expedita itaque iusto labore libero magni modi neque nihil officia, officiis possimus quam ullam vel veritatis voluptatibus.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda consectetur consequuntur debitis deleniti dolor ea eligendi, error expedita ipsam ipsum minima natus nostrum quibusdam quos saepe soluta suscipit totam.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa deserunt doloribus eveniet expedita itaque iusto labore libero magni modi neque nihil officia, officiis possimus quam ullam vel veritatis voluptatibus.
       </section>
     </div>
   </footer>

@@ -13,4 +13,10 @@
     max-width: $max-desktop-width;
     padding: 0 40px;
   }
+
+  &--fullscreen {
+    min-height: 100vh;
+    @include flexbox;
+    flex-direction: column;
+  }
 }

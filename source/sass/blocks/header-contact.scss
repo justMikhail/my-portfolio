@@ -18,10 +18,11 @@
   flex-direction: row-reverse;
   align-items: center;
 
-  &:hover .header-contacts__icon,
+  &:hover .header-contacts__icon use,
   &:active .header-contacts__icon,
   &:focus  .header-contacts__icon {
-    fill: $secondary-color;
+    transition: transform 0.1s linear;
+    transform: scale(0.9);
   }
 
   &:hover .header-contacts__text,

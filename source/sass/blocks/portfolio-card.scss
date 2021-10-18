@@ -1,0 +1,65 @@
+:root {
+  --br: 0.5em;
+  --custom-transition: transform 0.32s cubic-bezier(0.21, 1, 0.81, 1);
+}
+
+.portfolio-card {
+  position: relative;
+  width: 12.5em;
+  background-color: inherit;
+
+  &:hover {
+    .portfolio-card__bg {
+      transform: scale(1.5);
+    }
+
+    .portfolio-card__info {
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.portfolio-card__info {
+  z-index: 1;
+  position: relative;
+  transition: var(----custom-transition);
+}
+
+.portfolio-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--br);
+
+}
+
+.portfolio-card__title {
+}
+
+.portfolio-card__subtitle {
+}
+
+.portfolio-card__tech-stack {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+}
+
+.portfolio-card__tech-stack-item {
+  width: 2em;
+  height: 2em;
+}
+
+.portfolio-card__bg {
+  background-color: $black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: var(--br);
+
+  transform: scale(0.1);
+  transition: var(--custom-transition);
+}

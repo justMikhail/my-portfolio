@@ -39,6 +39,12 @@
 
 .social-media__icon {
 
+  &:hover,
+  &:focus {
+    transition: transform 0.1s linear;
+    transform: scale(1.1);
+  }
+
   @media (min-width: $tablet-width) {
     height: 38px;
     width: 38px;
@@ -47,11 +53,5 @@
   @media (min-width: $desktop-width) {
     height: 42px;
     width: 42px;
-  }
-
-  &:hover,
-  &:focus {
-    transition: transform 0.1s linear;
-    transform: scale(1.1);
   }
 }

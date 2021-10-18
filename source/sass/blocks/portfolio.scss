@@ -1,0 +1,30 @@
+.portfolio {
+  background-color: $secondary-bg;
+  color: $white;
+  padding: 120px 0;
+}
+
+.portfolio__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  column-gap: 30px;
+  padding-top: 100px;
+  padding-bottom: 200px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    row-gap: 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    row-gap: 144px;
+    column-gap: 80px;
+  }
+}
+
+.portfolio__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
