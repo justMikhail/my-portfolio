@@ -50,7 +50,7 @@
   @include primary-font;
   font-weight: 300;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.4;
 
   @media (max-width: $mobile-width) {
     @include visually-hidden
@@ -71,12 +71,12 @@
 }
 
 .about-me__buttons {
-  padding: 10px 0;
-  @include flexbox;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  padding: 10px 0;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -91,19 +91,17 @@
   }
 
   a {
-    @include flexbox;
+    display: flex;
     justify-content: center;
     align-items: center;
     min-width: 280px;
     border-radius: 30px;
-    //background-color: $secondary-color;
-    //border: 2px solid $secondary-color;
     padding: 15px 20px;
     transition: all 0.3s ease;
     //Fonts
     @include primary-font;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.4;
     color: $white;
 
     &:focus {
@@ -113,13 +111,13 @@
     @media (min-width: $tablet-width) {
       //Fonts
       font-size: 20px;
-      line-height: 24px;
+      line-height: 1.4;
     }
 
     @media (min-width: $desktop-width) {
       //Fonts
       font-size: 24px;
-      line-height: 30px;
+      line-height: 1.4;
     }
   }
 

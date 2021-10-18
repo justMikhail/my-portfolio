@@ -30,3 +30,27 @@
     top: -80px;
   }
 }
+
+@keyframes portfolio-card-title {
+  0% {
+    text-align: left;
+    opacity: 1;
+  }
+
+  20% {
+    text-align: left;
+    opacity: 0;
+  }
+
+  70% {
+    text-align: center;
+    opacity: 0;
+    transform: scale(1.2);
+  }
+
+  100% {
+    text-align: center;
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
