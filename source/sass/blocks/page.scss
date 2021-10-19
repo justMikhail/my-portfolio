@@ -34,3 +34,19 @@
 .page__footer {
   margin-bottom: 0;
 }
+
+.page__title {
+  //Fonts
+  @include primary-font;
+  font-size: 32px;
+
+  @media (min-width: $tablet-width) {
+    //Fonts
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //Fonts
+    font-size: 50px;
+  }
+}

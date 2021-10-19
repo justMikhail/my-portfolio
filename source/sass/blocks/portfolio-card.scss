@@ -1,11 +1,15 @@
 :root {
   --br: 0.5em;
   --custom-transition: transform 0.32s cubic-bezier(0.21, 1, 0.81, 1);
+  --arrow-transition: all 0.2s linear;
+  --arrow-width: 1em;
+  --hover-arrow-width: 1.5em;
+  --portfolio-card-width: 16em;
 }
 
 .portfolio-card {
   position: relative;
-  width: 16em;
+  width: var(--portfolio-card-width);
   background-color: inherit;
   display: flex;
   flex-direction: column;
@@ -27,6 +31,10 @@
       .portfolio-card__subtitle {
         opacity: 1;
       }
+    }
+
+    .portfolio-card__tech-stack li:not(:last-child) {
+      margin-right: 10px;
     }
   }
 }
@@ -73,6 +81,7 @@
 .portfolio-card__tech-stack-item {
   width: 2em;
   height: 2em;
+  transition: all 0.32s linear;
 }
 
 .portfolio-card__bg {
@@ -113,7 +122,11 @@
     border: 2px solid $primary-bg;
     border-radius: var(--br);
     padding: 10px 20px;
-    width: 12.5em;
+    width: var(--portfolio-card-width);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
     //Fonts
     @include primary-font;
@@ -124,5 +137,37 @@
     &:focus {
       @include basic-focus;
     }
+
+    &:hover span {
+      width: var(--hover-arrow-width);
+
+      &::before {
+        left: var(--hover-arrow-width);
+      }
+    }
+  }
+}
+
+.portfolio-card__button-arrow {
+  position: relative;
+  width: var(--arrow-width);
+  height: 2px;
+  margin-left: 1em;
+  background-color: $white;
+  left: 0;
+  transition: var(--arrow-transition);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: var(--arrow-width);
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-left: 6px solid $white;
+    border-bottom: 6px solid transparent;
+    transform: translateY(-50%);
+    transition: var(--arrow-transition);
   }
 }
