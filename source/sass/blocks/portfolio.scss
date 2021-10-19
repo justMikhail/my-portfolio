@@ -4,12 +4,32 @@
   padding: 120px 0;
 }
 
+.portfolio__title {
+  //Fonts
+  @include primary-font;
+
+  @media (min-width: $tablet-width) {
+    //Fonts
+  }
+
+  @media (min-width: $desktop-width) {
+    //Fonts
+    font-size: 60px;
+  }
+}
+
+.portfolio__subtitle {
+  //Fonts
+  @include primary-font;
+
+}
+
 .portfolio__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   column-gap: 30px;
   padding-top: 100px;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
