@@ -1,5 +1,5 @@
 :root {
-  --br: 0.5em;
+  --br: 1.5em;
   --custom-transition: transform 0.32s cubic-bezier(0.21, 1, 0.81, 1);
   --arrow-transition: all 0.2s linear;
   --arrow-width: 1em;
@@ -133,6 +133,7 @@
     font-size: 1em;
     line-height: 1.4;
     color: $white;
+    text-transform: uppercase;
 
     &:focus {
       @include basic-focus;
