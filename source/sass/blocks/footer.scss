@@ -16,15 +16,30 @@
   height: 70px;
   background-color: $white;
   border-radius: 65%;
+  transition: all 0.25s linear;
 
   position: absolute;
-  top: -35px;
-  right: 0;
+  top: -30px;
+  right: 50%;
   left: 50%;
   transform: translateX(-50%);
 
   //Fonts
   color: $secondary-bg-400;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: $black;
+    top: -35px;
+  }
+
+  &:focus {
+    @include basic-focus;
+  }
+
+  &:active {
+    color: $secondary-bg-400;
+  }
 }
 
