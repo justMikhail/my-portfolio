@@ -24,7 +24,6 @@
 // Header
 @import "./blocks/nav";
 @import "./blocks/nav-burger-icon";
-@import "./blocks/header-contact";
 
 // Main
 @import "./blocks/about-me";
@@ -37,4 +36,7 @@
 // Footer
 @import "blocks/contacts";
 @import "blocks/copyright";
+
+//Shared
+@import "blocks/contact-list";
 

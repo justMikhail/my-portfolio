@@ -1,58 +1,59 @@
+:root {
+  --text-size-mobile: 22px;
+  --text-size-tablet: 32px;
+  --text-size-desctop: 36px;
+
+  --list-size-mobile: 26px;
+  --list-size-tablet: 36px;
+  --list-size-desctop: 40px;
+}
+
 .multiple-title {
   display: inline-flex;
   background-color: inherit;
 }
 
 .multiple-title__static-text {
-  --static-text-size-mobile: 22px;
-  --static-text-size-tablet: 32px;
-  --static-text-size-desctop: 36px;
-
   background-color: inherit;
   margin-right: 8px;
   //Fonts
   @include primary-font;
   font-weight: 700;
-  font-size: var(--static-text-size-mobile);
+  font-size: var(--text-size-mobile);
+  line-height: var(--list-size-mobile);
   color: $black;
 
   @media (min-width: $tablet-width) {
     //Fonts
-    font-size: var(--static-text-size-tablet);
+    font-size: var(--text-size-tablet);
+    line-height: var(--list-size-tablet)
   }
 
   @media (min-width: $desktop-width) {
     //Fonts
-    font-size: var(--static-text-size-desctop);
+    font-size: var(--text-size-desctop);
+    line-height: var(--list-size-desctop)
   }
 }
 
 .multiple-title__dynamic-list {
-  --dynamic-list-size-mobile: 26px;
-  --dynamic-list-size-tablet: 36px;
-  --dynamic-list-size-desctop: 40px;
-
   background-color: inherit;
-  height: var(--dynamic-list-size-mobile);
-  line-height: var(--dynamic-list-size-mobile);
+  height: var(--list-size-mobile);
+  line-height: var(--list-size-mobile);
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    height: var(--dynamic-list-size-tablet);
-    line-height: var(--dynamic-list-size-tablet);
+    height: var(--list-size-tablet);
+    line-height: var(--list-size-tablet);
   }
 
   @media (min-width: $desktop-width) {
-    height: var(--dynamic-list-size-desctop);
-    line-height: var(--dynamic-list-size-desctop);
+    height: var(--list-size-desctop);
+    line-height: var(--list-size-desctop);
   }
 }
 
 .multiple-title__dynamic-list li {
-  --dynamic-text-size-mobile: 22px;
-  --dynamic-text-size-tablet: 32px;
-  --dynamic-text-size-desctop: 36px;
-
   background-color: inherit;
   position: relative;
   top: 0;
@@ -60,19 +61,19 @@
   //Fonts
   @include  primary-font;
   font-weight: 700;
-  font-size: var(--dynamic-text-size-mobile);
+  font-size: var(--text-size-mobile);
   color: $primary-color;
 
   @media (min-width: $tablet-width) {
     animation: slide-tablet 6s steps(2) infinite;
     //Fonts
-    font-size: var(--dynamic-text-size-tablet);
+    font-size: var(--text-size-tablet);
   }
 
   @media (min-width: $desktop-width) {
     animation: slide-desktop 6s steps(2) infinite;
     //Fonts
-    font-size: var(--dynamic-text-size-desctop);
+    font-size: var(--text-size-desctop);
   }
 }
 
@@ -89,5 +90,25 @@
     border-left: 2px solid $primary-color;
     background-color: inherit;
     animation: typing 3s steps(18) infinite;
+  }
+}
+
+//Keyframes
+
+@keyframes slide-mobile {
+  100%{
+    top: -52px;
+  }
+}
+
+@keyframes slide-tablet {
+  100%{
+    top: -72px;
+  }
+}
+
+@keyframes slide-desktop {
+  100%{
+    top: -80px;
   }
 }

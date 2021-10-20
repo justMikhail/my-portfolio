@@ -1,9 +1,13 @@
 .copyright {
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .copyright__text {
   //Fonts
   @include primary-font;
   color: $secondary-bg-400;
+  font-size: 14px;
 }

@@ -13,24 +13,6 @@
   }
 }
 
-@keyframes slide-mobile {
-  100%{
-    top: -52px;
-  }
-}
-
-@keyframes slide-tablet {
-  100%{
-    top: -72px;
-  }
-}
-
-@keyframes slide-desktop {
-  100%{
-    top: -80px;
-  }
-}
-
 @keyframes portfolio-card-title {
   0% {
     text-align: left;

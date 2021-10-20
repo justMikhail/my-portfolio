@@ -1,12 +1,19 @@
 .social-media {
-  @include flexbox;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+
+  &--about-me {
+    justify-content: center;
+  }
+
+  &--contacts {
+    justify-content: flex-start;
+  }
 }
 
 .social-media__list {
-  @include flexbox;
+  display: flex;
   flex-direction: row;
 }
 
