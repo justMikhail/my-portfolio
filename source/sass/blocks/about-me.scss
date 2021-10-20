@@ -35,6 +35,14 @@
   background-color: inherit;
   @include flexbox;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .about-me__multiple-title {
@@ -108,6 +116,10 @@
       @include basic-focus;
     }
 
+    &:active {
+      opacity: 0.55;
+    }
+
     @media (min-width: $tablet-width) {
       //Fonts
       font-size: 20px;
@@ -126,7 +138,6 @@
     border: 2px solid $secondary-color;
 
     &:hover,
-    &:active,
     &:focus {
       background-color: inherit;
       color: $black;

@@ -1,7 +1,7 @@
 .scroll-down-icon {
   --scroll-down-icon-width: 30px;
   --scroll-down-icon-height: 50px;
-  --scroll-down-icon-bottom-desctop: 50px;
+  --scroll-down-icon-bottom-desctop: 7%;
 
   @media (min-width: $tablet-width) {
     bottom: var(--scroll-down-icon-bottom-desctop);
@@ -11,7 +11,7 @@
     border-radius: 16px;
     width: var(--scroll-down-icon-width);
     height: var(--scroll-down-icon-height);
-    margin-left: -15px;
+    margin-left: var(--scroll-down-icon-width) / 2;
     display: block;
     opacity: 0.4;
   }

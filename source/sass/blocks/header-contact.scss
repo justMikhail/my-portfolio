@@ -13,7 +13,7 @@
 }
 
 .header-contacts__link {
-  @include flexbox;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
   align-items: center;
@@ -55,8 +55,16 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 5px;
-    width: 32px;
-    height: 32px;
+
+    &--phone {
+      width: 2.2em;
+      height: 2.2em;
+    }
+
+    &--email {
+      width: 2.2em;
+      height: 2.2em;
+    }
   }
 }
 

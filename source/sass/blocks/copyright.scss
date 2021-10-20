@@ -3,5 +3,7 @@
 }
 
 .copyright__text {
-
+  //Fonts
+  @include primary-font;
+  color: $secondary-bg-400;
 }
