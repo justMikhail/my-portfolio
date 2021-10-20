@@ -1,4 +1,4 @@
-# [Pet roject](https://github.com/justMikhail/portfolio)
+# [Pet project](https://github.com/justMikhail/portfolio)
 
 ![Flutter](https://img.shields.io/badge/status-release-<COLOR>)
 
