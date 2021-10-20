@@ -3,7 +3,8 @@
 ![Flutter](https://img.shields.io/badge/status-release-<COLOR>)
 
 ## **Описание проекта**
-Pet проект для размещения информации о проектах из моего портфолио. [здесь](https://github.com/justMikhail/portfolio)
+Pet проект для размещения информации о проектах из моего портфолио.
+Посмотреть можно [здесь](https://justmikhail.github.io/portfolio/)
 
 ## **Стек**
 + HTML/CSS(Sass)
