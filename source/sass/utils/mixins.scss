@@ -32,14 +32,6 @@
   font-family: "Ubuntu", sans-serif;
 }
 
-@mixin flexbox {
-  display:-webkit-box;
-  display:-moz-box;
-  display:-ms-flexbox;
-  display:-webkit-flex;
-  display:flex;
-}
-
 @mixin visually-hidden {
   position: absolute;
 
@@ -54,4 +46,9 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@mixin basic-focus {
+  outline: 2px dashed $black;
+  outline-offset: 1px;
 }

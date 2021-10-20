@@ -30,16 +30,18 @@
   align-items: center;
 
   &:hover .contacts-list__icon use,
-  &:active .contacts-list__icon,
   &:focus  .contacts-list__icon {
     transition: transform 0.1s linear;
     transform: scale(0.9);
   }
 
   &:hover .contacts-list__text,
-  &:active .contacts-list__text,
   &:focus  .contacts-list__text {
-    opacity: 0.6;
+    opacity: 0.65;
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 
   &:focus {

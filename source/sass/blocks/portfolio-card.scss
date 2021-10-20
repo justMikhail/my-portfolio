@@ -146,10 +146,6 @@
     color: $white;
     text-transform: uppercase;
 
-    &:focus {
-      @include basic-focus;
-    }
-
     &:hover span,
     &:focus span {
       width: var(--hover-arrow-width);
@@ -157,6 +153,10 @@
       &::before {
         left: var(--hover-arrow-width);
       }
+    }
+
+    &:focus {
+      opacity: 0.65;
     }
   }
 }
