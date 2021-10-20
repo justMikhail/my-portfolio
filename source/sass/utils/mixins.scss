@@ -55,8 +55,3 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-@mixin basic-focus {
-  outline: 2px dashed $black;
-  outline-offset: 1px;
-}

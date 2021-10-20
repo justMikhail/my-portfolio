@@ -1,6 +1,6 @@
 .about-me {
   background-color: $white;
-  @include flexbox;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -22,7 +22,7 @@
 
 .about-me__info-wrapper {
   background-color: inherit;
-  @include flexbox;
+  display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
@@ -33,7 +33,7 @@
 
 .about-me__info {
   background-color: inherit;
-  @include flexbox;
+  display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
@@ -47,7 +47,7 @@
 
 .about-me__multiple-title {
   padding: 10px 0;
-  @include flexbox;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
