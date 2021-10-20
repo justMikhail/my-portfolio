@@ -7,7 +7,7 @@
 
   @media (max-width: $mobile-width-only) {
     display: block;
-    z-index: $nav-toggle-z-index;
+    z-index: $nav-burger-z-index;
   }
 }
 
@@ -20,11 +20,12 @@
     height: 100%;
     background-color: rgba(0, 0, 0 ,0.9);
     transition: left 0.3s ease 0s;
-    @include flexbox;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: $min-height-header;
+    padding-top: $height-header-mobile;
     overflow: auto;
+    z-index: 12;
   }
 
   &--closed {
@@ -40,14 +41,14 @@
       width: 100%;
       top: 0;
       left: 0;
-      height: $min-height-header;
+      height: $height-header-mobile;
       background-color: $white;
     }
   }
 }
 
 .nav__list {
-  @include flexbox;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -65,28 +66,52 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 0 10px 50px;
+    margin: 10px 0 10px 50px;
   }
 }
 
 .nav__link {
   //font
+  @include primary-font;
   font-size: 32px;
   color: $white;
 
-  &:hover {
-    text-decoration: underline;
+  &:focus {
+    @include basic-focus;
   }
 
   @media (min-width: $tablet-width) {
+    padding: 8px 2px;
+    background-image: linear-gradient($primary-color, $primary-color);
+    background-position: 20% 100%;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size 0.3s;
+
+    &:hover,
+    &:focus {
+      background-size: 100% 2px;
+    }
+
+    &:active {
+      background-size: 100% 2px;
+    }
+
     //font
-    font-size: 26px;
+    font-size: 24px;
     color: $black;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 10px 2px;
     //font
     font-size: 28px;
-    color: $black;
+
+    &--current {
+      @media (min-width: $tablet-width) {
+        background-image: $primary-color;
+        background-size: 100% 2px;
+      }
+    }
   }
 }

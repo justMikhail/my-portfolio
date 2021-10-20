@@ -19,17 +19,24 @@
 @import "./blocks/page";
 @import "./blocks/header";
 @import "./blocks/main";
-//@import "./blocks/footer";
+@import "./blocks/footer";
 
 // Header
 @import "./blocks/nav";
 @import "./blocks/nav-burger-icon";
-@import "./blocks/header-contact";
 
 // Main
 @import "./blocks/about-me";
-@import "./blocks/mouse-icon";
+@import "./blocks/multiple-title";
+@import "./blocks/social-media";
+@import "blocks/scroll-down-icon";
+@import "blocks/portfolio";
+@import "blocks/portfolio-card";
 
 // Footer
+@import "blocks/contacts";
+@import "blocks/copyright";
 
+//Shared
+@import "blocks/contact-list";
 

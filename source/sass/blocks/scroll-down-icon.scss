@@ -1,0 +1,38 @@
+.scroll-down-icon {
+  --scroll-down-icon-width: 30px;
+  --scroll-down-icon-height: 50px;
+  --scroll-down-icon-bottom-desctop: 7%;
+
+  @media (min-width: $tablet-width) {
+    bottom: var(--scroll-down-icon-bottom-desctop);
+    position: absolute;
+    left: 50%;
+    border: 2px solid $black;
+    border-radius: 16px;
+    width: var(--scroll-down-icon-width);
+    height: var(--scroll-down-icon-height);
+    margin-left: var(--scroll-down-icon-width) / 2;
+    display: block;
+    opacity: 0.4;
+  }
+}
+
+.scroll-down-icon__wheel {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    border-radius: 10px;
+    background: $secondary-color;
+    width: 4px;
+    height: 10px;
+    top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+  }
+}

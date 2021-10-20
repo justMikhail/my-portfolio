@@ -1,0 +1,30 @@
+.footer {
+  padding-top: 20px;
+  position: relative;
+}
+
+
+.footer__title {
+  margin-bottom: 15px;
+}
+
+.footer__go-up-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 70px;
+  background-color: $white;
+  border-radius: 65%;
+
+  position: absolute;
+  top: -35px;
+  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  //Fonts
+  color: $secondary-bg-400;
+  text-transform: uppercase;
+}
+

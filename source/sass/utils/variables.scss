@@ -8,13 +8,24 @@ $max-mobile-width: 480px;
 $max-tablet-width: 1280px;
 $max-desktop-width: 1300px;
 
-// Colors
-$white: #ffffff;
-$black: #000000;
-
 // Sizes
-$min-height-header: 70px;
+$height-header-mobile: 70px;
+$height-header-tablet: 90px;
 
 // z-indexes
 $header-z-index: 10;
-$nav-toggle-z-index: 5;
+$nav-burger-z-index: 15;
+
+// Colors
+$white: #fdfdfd;
+//$black: #0D1113;
+$black: #111111;
+
+$primary-color: #375CC2;
+$secondary-color: #f55422;
+
+$primary-bg: #E2E7E9;
+$secondary-bg: rgb(40, 46, 54);
+$secondary-bg-400: #757575;
+
+

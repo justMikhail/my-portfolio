@@ -1,17 +1,14 @@
 .main {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background-color: inherit;
 }
 
 .main__about-me {
-  background-color: $white;
-  display: flex;
   min-height: 100vh;
+  margin-bottom: 50px; // todo fix
 }
 
 .main__portfolio {
-  background-color: blueviolet;
 }
 
 .main__contacts {

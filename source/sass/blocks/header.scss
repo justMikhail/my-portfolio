@@ -1,18 +1,23 @@
 .header {
-  background-color: inherit;
+  background-color: $white;
+  min-height: $height-header-mobile;
 }
 
 .header__inner {
-  @include flexbox;
-  flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  min-height: $min-height-header;
+  min-height: $height-header-mobile;
+
+  @media (min-width: $tablet-width) {
+    min-height: $height-header-tablet;
+  }
 }
 
 .header__nav {
 }
 
 .header__contacts {
-
+  z-index: $nav-burger-z-index;
 }
